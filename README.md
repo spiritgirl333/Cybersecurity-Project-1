@@ -32,7 +32,6 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 - Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash. Metricbeat helps you monitor your servers by collecting metrics from the system and services running on the server, such as: Apache.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function   | IP Address | Operating System |
 |----------|----------  |------------|------------------|
@@ -74,7 +73,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+<img width="471" alt="image" src="https://user-images.githubusercontent.com/88525158/148024371-dd10f075-c862-4612-8534-5c39ec1db224.png">
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -106,17 +105,15 @@ SSH into the control node and follow the steps below:
 
 - Run the playbook, and navigate to ELK-Server-PublicIP:5601/app/kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:
-
 - _Which file is the playbook?
 
 - install-elk.yml
 - filebeat-playbook.yml
 - metricbeat-playbook.yml
 
- Where do you copy it?_
+ _Where do you copy it?_
 
--etc/ansible
+- etc/ansible
 
 - _Which file do you update to make Ansible run the playbook on a specific machine? 
 
@@ -127,7 +124,7 @@ _TODO: Answer the following questions to fill in the blanks:
 - /etc/ansible/hosts with the webserver IP address and the Elk Stack IP address.
 
 - _Which URL do you navigate to in order to check that the ELK server is running?
-- http://40.83.139.116:5601/app/kibana
+- 40.83.139.116:5601/app/kibana
 
 _Specific commands the user will need to run to download the playbook, update the files, etc._
 
