@@ -105,28 +105,28 @@ SSH into the control node and follow the steps below:
 
 - Run the playbook, and navigate to ELK-Server-PublicIP:5601/app/kibana to check that the installation worked as expected.
 
-- _Which file is the playbook?
+Which file is the playbook?
 
 - install-elk.yml
 - filebeat-playbook.yml
 - metricbeat-playbook.yml
 
- _Where do you copy it?_
+Where do you copy it?_
 
 - etc/ansible
 
-- _Which file do you update to make Ansible run the playbook on a specific machine? 
+Which file do you update to make Ansible run the playbook on a specific machine? 
 
 - /etc/ansible/hosts
 
-- _How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 
 - /etc/ansible/hosts with the webserver IP address and the Elk Stack IP address.
 
-- _Which URL do you navigate to in order to check that the ELK server is running?
+Which URL do you navigate to in order to check that the ELK server is running?
 - 40.83.139.116:5601/app/kibana
 
-_Specific commands the user will need to run to download the playbook, update the files, etc._
+Specific commands the user will need to run to download the playbook, update the files, etc._
 
 - ssh azureuser@JumpBox PrivateIP
 - sudo docker container list -a-
